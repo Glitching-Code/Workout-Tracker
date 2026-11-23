@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workout Tracker</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
 <header>
+
+\\Logo for the app
 <img src="https://tse2.mm.bing.net/th/id/OIP.czsM1enzeDXsnlrsr-18AAHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Fittrak Logo" width="100">
 <h3>Fittrak</h3>
 </header>
@@ -16,13 +20,15 @@
         <li><a href="#workouts">Workouts</a></li>
         <li><a href="#progress">Progress</a></li>
         <li><a href="#settings">Settings</a></li>
+        <li><a href="#library">Exercise library</a></li>
+        <li><a href="#streak">Current Streak</a></li>
     </ul>
 </nav>
 <main>
-    <section>
+    <section id="home">
         <h1>Welcome back! Let's get started</h1>
     </section>
-    <section>
+    <section id="workouts">
         <h2>Workout Statistics</h2>
         <article>
             <h3>Total Workouts</h3>
@@ -40,12 +46,12 @@
             <p>Time Spent</p>
         </article>
     </section>
-    <section>
+    <section id="quick-actions">
         <h2>Quick Actions</h2>
         <button>New Workout</button>
         <button>View history</button>
     </section>
-    <section>
+    <section id="recent-workouts">
         <h2>Recent Workouts</h2>
         <article>
             <h3>Push day</h3>
@@ -59,6 +65,11 @@
             <h3>Leg day</h3>
             <p>Friday : Quads, Hamstrings, Calves</p>
         </article>
+    </section>
+    <section id ="streak">
+        <h2> Current Streak: 0 Days</h2>
+        <p> Longest Streak: 0 Days</p>
+        <p> Last workout:Not started</p>
     </section>
 </main>
 <footer>
